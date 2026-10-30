@@ -436,7 +436,7 @@ function destroyBase() {
 function makePlayer(cfg) {
   return {
     x: cfg.spawn.x * TILE + OFF, y: cfg.spawn.y * TILE + OFF,
-    dir: UP, alive: true, invuln: 2, isPlayer: true,
+    dir: UP, alive: true, active: true, invuln: 2, isPlayer: true,
     lives: 3, out: false, respawnTimer: 0,
     power: 0, speedBoost: 0,
     color: cfg.color, track: cfg.track, bind: cfg.bind
